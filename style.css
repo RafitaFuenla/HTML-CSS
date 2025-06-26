@@ -2,20 +2,80 @@
 
 * {
   font-family: "Comic Relief", system-ui;
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-
-
+:root {
+  --rtc--primary-color: #fffffe;
+  --rtc--secundary-color: #abd1c6;
+  --rtc--teritiary-color: #013b2b;
+  --rtc--background-color: #053533;
+  --rtc--button-color: #f9bc60;
+  --rtc--other-color: #e16162;
 }
 
 body {
-  background-image: url(./assets/fondo.png);
-  background-size: cover;
-  background-repeat: repeat;
+  background-color: var(--rtc--background-color);
   background-position: center;
-  color: #ffffff;  
+  color: #ffffff;
 }
 
-/*   #140057 Azul  bakground */
-/*  #421fb2 /* Azul intermedio */
-/*  #006eff /* Azul muy clarito */
+header > nav {
+  background-color: var(--rtc--teritiary-color);
+  padding:10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #abd1c6;
+  flex-grow: 1;
+  display: flex; /* Coloca elementos en eje principal flex (horizontal) */
+  justify-content: center;
+}
+
+.nav-comienzo {
+  /* background-color: black; */
+  list-style: none;
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+  
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.5s;
+}
+
+a img {
+  width: 50px;
+  transition: transform 0.5s ease;
+}
+
+a img:hover {
+  transform: scale(1.2);
+}
+
+h1 {
+  text-transform: uppercase; /* Mayusculas */
+  color: var(--rtc--secundary-color);
+  -webkit-text-stroke: 3px rgb(5, 61, 2); /* Borde al texto */
+  text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5); /* Sombra texto */
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.topmotos {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.copiright{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
