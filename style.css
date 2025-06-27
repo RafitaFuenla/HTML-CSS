@@ -77,8 +77,9 @@ h1 {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    background-color: #010806;
     display: grid;
-    grid-template-columns: 25% 35% 20% 20%;
+    grid-template-columns: 28% 25% 27% 20%;
     gap: 10px;
     grid-template-areas: "descripcion1 imagencentro descripcion2 motos";
   }
@@ -95,6 +96,7 @@ h1 {
 
 @media screen and (max-width: 1199px) {
   .hero {
+    background-color: #010806;
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 10px;
@@ -116,12 +118,13 @@ h1 {
 
 .descripcion1 {
   grid-area: descripcion1;
+  display: flex;
+  align-items: center;
 }
 
 .imagencentro {
   grid-area: imagencentro;
-  display: flex;
-  /* place-items: center; */
+  display: grid;
   align-items: center;
   justify-content: center;
 }
@@ -139,11 +142,14 @@ div > img {
 }
 
 .descripcion2 {
+  display: grid;
   grid-area: descripcion2;
+ align-items: center;
 }
 
 .Moto1 {
   border-radius: 50px;
+  box-shadow: #010806;
 }
 
 .Moto2 {
@@ -165,6 +171,11 @@ div > img {
 .Moto6 {
   border-radius: 50px;
 }
+
+.mensajerias {
+  background-color: aqua;
+  display: flex;
+}  
 
 .copiright {
   display: flex;
