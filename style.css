@@ -21,6 +21,7 @@ body {
   background-color: var(--rtc--background-color);
   background-position: center;
   color: var(--rtc--other-color);
+  overflow-x: hidden;
 }
 
 header > nav {
@@ -30,7 +31,7 @@ header > nav {
   border-radius: 10px;
   border: 1px solid #010806;
   flex-grow: 1;
-  display: flex; /* Coloca elementos en eje principal flex (horizontal) */
+  display: flex;
   justify-content: center;
 }
 
@@ -63,6 +64,7 @@ h1 {
   font-size: 70px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .titulo {
@@ -73,21 +75,43 @@ h1 {
   text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5); /* Sombra texto */
 }
 
-.nocambios {
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+@media screen and (min-width: 1200px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 25% 35% 20% 20%;
+    gap: 10px;
+    grid-template-areas: "descripcion1 imagencentro descripcion2 motos";
+  }
+
+  .motos6 {
+    grid-area: motos;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: left; /* Centra las columnas */
+    gap: 10px;
+  }
 }
 
-.hero {
-  /* background-color: #010806; */
-  display: grid;
-  grid-template-columns: 25% 35% 20% 20%;
+@media screen and (max-width: 1199px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    grid-template-areas:
+      "descripcion1 imagencentro"
+      "motos descripcion2";
+  }
 
-  gap: 10px;
-  grid-template-areas: "descripcion1 imagencentro descripcion2 motos";
+  .motos6 {
+    grid-area: motos;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    place-items: center;
+    gap: 5px;
+  }
 }
 
 .descripcion1 {
@@ -97,7 +121,7 @@ h1 {
 .imagencentro {
   grid-area: imagencentro;
   display: flex;
-  place-items: center;
+  /* place-items: center; */
   align-items: center;
   justify-content: center;
 }
@@ -109,26 +133,13 @@ h1 {
   display: grid;
 }
 
-ul > img {
+div > img {
   width: 100px;
   height: 100px;
 }
 
 .descripcion2 {
   grid-area: descripcion2;
-}
-
-.motos {
-  grid-area: motos;
-  display: grid;
-  align-items: center;
-}
-.motos6 {
-  display: grid;
-  grid-template-columns: auto auto;
-  align-items: center;
-  justify-content: left; /* Centra las columnas */
-  gap: 5px;
 }
 
 .Moto1 {
@@ -154,8 +165,6 @@ ul > img {
 .Moto6 {
   border-radius: 50px;
 }
-
-
 
 .copiright {
   display: flex;
