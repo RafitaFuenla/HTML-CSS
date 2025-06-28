@@ -121,8 +121,7 @@ h1 {
   grid-area: descripcion1;
   display: flex;
   text-align: center;
-     align-items: center;
-
+  align-items: center;
 }
 
 .imagencentro {
@@ -138,13 +137,7 @@ h1 {
   border-radius: 100px;
   box-shadow: 10px 10px 10px #010806;
   border: 3px solid var(--rtc--secundary-color);
-
   display: grid;
-}
-
-div > img {
-  width: 100px;
-  height: 100px;
 }
 
 .descripcion2 {
@@ -154,47 +147,31 @@ div > img {
   align-items: center;
 }
 
-.Moto1 {
+div > img {
+  width: 100px;
+  height: 100px;
   border-radius: 50px;
   box-shadow: 10px 10px 10px #010806;
   border: 3px solid var(--rtc--secundary-color);
 }
 
-.Moto2 {
-  border-radius: 50px;
-  box-shadow: 10px 10px 10px #010806;
-  border: 3px solid var(--rtc--secundary-color);
+#formulario {  
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 50%50%;
+  justify-items: center;
 }
 
-.Moto3 {
-  border-radius: 50px;
-  box-shadow: 10px 10px 10px #010806;
-  border: 3px solid var(--rtc--secundary-color);
-}
-
-.Moto4 {
-  border-radius: 50px;
-  box-shadow: 10px 10px 10px #010806;
-  border: 3px solid var(--rtc--secundary-color);
-}
-
-.Moto5 {
-  border-radius: 50px;
-  box-shadow: 10px 10px 10px #010806;
-  border: 3px solid var(--rtc--secundary-color);
-}
-
-.Moto6 {
-  border-radius: 50px;
-  box-shadow: 10px 10px 10px #010806;
-  border: 3px solid var(--rtc--secundary-color);
+#formulario > input {
+  border: 2px solid #000000;
+  border-radius: 5px;
 }
 
 #mensajerias {
-  background-color: rgb(3, 67, 67);
   display: flex;
   justify-content: center;
   gap: 50px;
+  margin: 5px;
 }
 
 .copiright {
