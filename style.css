@@ -157,10 +157,6 @@ div > img {
 
 .formulario {
   display: flex;
-  /*   padding: 10px; */
-  /*   border-radius: 20px; */
-  /*  width: fit-content; */
-  gap: 3px;
   align-items: center;
   justify-content: center;
 }
@@ -170,15 +166,22 @@ div > img {
   display: flex;
   flex-direction: column;
   gap: 3px;
-  border-radius: 5px;
 }
 
 .columna1 {
+  background-color: #965d62;
   display: flex;
   align-items: end;
 }
 
+.columna2 > input {
+  border-radius: 5px;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
 .enviar {
+  background-color: #010806;
   display: flex;
   justify-content: center;
 }
@@ -186,7 +189,7 @@ div > img {
 .boton_enviar {
   background-color: var(--rtc--other-color);
   margin-top: 3px;
-  width: 150px;
+  width: 100px;
   height: 40px;
   border-radius: 50px;
 }
