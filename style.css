@@ -170,7 +170,7 @@ div > img {
   display: flex;
   flex-direction: column;
   gap: 3px;
-  border-radius: 5px; */
+  border-radius: 5px;
 }
 
 .columna1 {
@@ -181,8 +181,14 @@ div > img {
 .enviar {
   display: flex;
   justify-content: center;
+}
+
+.boton_enviar {
+  background-color: var(--rtc--other-color);
   margin-top: 3px;
-  
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
 }
 
 #mensajerias {
