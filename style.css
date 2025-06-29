@@ -155,17 +155,34 @@ div > img {
   border: 3px solid var(--rtc--secundary-color);
 }
 
-#formulario {  
-  margin: 15px;
+.formulario {
   display: flex;
-  
- /*  justify-items: center; */
- gap: 10px;
+  /*   padding: 10px; */
+  /*   border-radius: 20px; */
+  /*  width: fit-content; */
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
 }
 
-#formulario > input {
-  border: 2px solid #000000;
-  border-radius: 5px;
+.columna1,
+.columna2 {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  border-radius: 5px; */
+}
+
+.columna1 {
+  display: flex;
+  align-items: end;
+}
+
+.enviar {
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
+  
 }
 
 #mensajerias {
