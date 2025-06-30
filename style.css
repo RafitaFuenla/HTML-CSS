@@ -26,10 +26,10 @@ body {
 
 header > nav {
   background-color: var(--rtc--teritiary-color);
-  padding: 10px;
-  margin-top: 10px;
   border-radius: 10px;
   border: 1px solid #010806;
+  padding: 10px;
+  margin-top: 10px;
   flex-grow: 1;
   display: flex;
   justify-content: center;
@@ -155,6 +155,15 @@ div > img {
   border: 3px solid var(--rtc--secundary-color);
 }
 
+.registrate {
+  margin: 0 auto;
+  border: 3px black solid;
+  width: 500px;
+  padding: 10px;
+  border-radius: 20px;
+  /* box-shadow: 2px 2px 2px #010806; */
+}
+
 .formulario {
   display: flex;
   align-items: center;
@@ -165,32 +174,36 @@ div > img {
 .columna2 {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
   gap: 3px;
 }
 
 .columna1 {
-  background-color: #965d62;
   display: flex;
   align-items: end;
+  padding-right: 10px;
+  gap: 3px;
 }
 
-.columna2 > input {
+.columna2 > div > input {
   border-radius: 5px;
-  background-color: antiquewhite;
+  background-color: rgba(115, 100, 66, 0.733);
   text-align: center;
+  color: black;
+  gap: 3px;
 }
 
 .enviar {
-  background-color: #010806;
   display: flex;
   justify-content: center;
 }
 
 .boton_enviar {
   background-color: var(--rtc--other-color);
-  margin-top: 3px;
+  margin-top: 10px;
+  margin-bottom: 7px;
   width: 100px;
-  height: 40px;
+  height: 35px;
   border-radius: 50px;
 }
 
@@ -198,7 +211,7 @@ div > img {
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin: 5px;
+  margin: 10px;
 }
 
 .copiright {
