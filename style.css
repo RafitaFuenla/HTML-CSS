@@ -186,7 +186,6 @@ div > img {
   font-size: 25px;
 }
 
-
 .honda {
   grid-area: honda;
 }
@@ -197,7 +196,7 @@ div > img {
 
 .kawa {
   grid-area: kawa;
-  }
+}
 
 div > h3 {
   text-align: center;
@@ -221,7 +220,6 @@ div > h3 {
   padding: 10px;
   border-radius: 20px;
   
-  /* box-shadow: 2px 2px 2px #010806; */
 }
 
 .tituloregitro {
