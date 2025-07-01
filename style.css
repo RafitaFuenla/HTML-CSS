@@ -59,6 +59,7 @@ a img:hover {
 
 h1 {
   text-transform: uppercase; /* Mayusculas */
+  text-align: center;
   color: var(--rtc--teritiari-color);
   -webkit-text-stroke: 3px rgb(5, 61, 2); /* Borde al texto */
   text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5); /* Sombra texto */
@@ -69,6 +70,7 @@ h1 {
 }
 
 .titulo {
+  text-align: center;
   margin-bottom: 10px;
   font-size: 45px;
   display: flex;
@@ -78,7 +80,6 @@ h1 {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    /*    background-color: #010806; */
     display: grid;
     grid-template-columns: 28% 25% 27% 20%;
     gap: 10px;
@@ -109,11 +110,14 @@ h1 {
   .motos6 {
     grid-area: motos;
     display: grid;
-    width: 100%;
-    grid-template-columns: 33% 33% 33%;
-    justify-content: center;
-    place-items: center;
-    gap: 5px;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+
+  .descripcion2 {
+    padding-right: 10px;
   }
 }
 
@@ -155,6 +159,30 @@ div > img {
   border: 3px solid var(--rtc--secundary-color);
 }
 
+#top {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cartas {
+  display: flex;
+}
+
+div > h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+.fotostop {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.descripciontop {
+  text-align: center;
+  margin: 10px 5px 100px 5px;
+}
+
 .registrate {
   margin: 0 auto;
   border: 3px black solid;
@@ -164,7 +192,7 @@ div > img {
   /* box-shadow: 2px 2px 2px #010806; */
 }
 
-.formulario {
+#formulario {
   display: flex;
   align-items: center;
   justify-content: center;
