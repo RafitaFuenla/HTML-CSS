@@ -91,14 +91,18 @@ h1 {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    justify-content: left; /* Centra las columnas */
+    justify-content: space-evenly; /* Centra las columnas */
     gap: 10px;
+  }
+
+  .cartas {
+    display: grid;
+    grid-template-areas: "honda yama kawa";
   }
 }
 
 @media screen and (max-width: 1199px) {
   .hero {
-    /*   background-color: #010806; */
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 10px;
@@ -119,6 +123,14 @@ h1 {
   .descripcion2 {
     padding-right: 10px;
   }
+
+  .cartas {
+    display: grid;
+    justify-content: space-around;
+    grid-template-areas:
+      "honda kawa"
+      "yama yama";
+  } 
 }
 
 .descripcion1 {
@@ -161,12 +173,31 @@ div > img {
 
 #top {
   text-align: center;
-  margin-top: 10px;
+  font-size: 40px;
+  margin-top: 50px;
 }
 
 .cartas {
-  display: flex;
+  display: grid;
+  width: 100%;
 }
+
+.marcas {
+  font-size: 25px;
+}
+
+
+.honda {
+  grid-area: honda;
+}
+
+.yamaha {
+  grid-area: yama;
+}
+
+.kawa {
+  grid-area: kawa;
+  }
 
 div > h3 {
   text-align: center;
