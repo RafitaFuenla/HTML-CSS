@@ -9,23 +9,23 @@
 }
 
 :root {
-  --rtc--primary-color: #fffffe;
-  --rtc--secundary-color: #965d62;
-  --rtc--teritiary-color: #4f3e47;
-  --rtc--background-color: #2b222c;
-  --rtc--button-color: #f2d974;
-  --rtc--other-color: #c7956d;
+  --primary-color: #fffffe;
+  --secundary-color: #965d62;
+  --teritiary-color: #4f3e47;
+  --background-color: #2b222c;
+  --button-color: #f2d974;
+  --other-color: #c7956d;
 }
 
 body {
-  background-color: var(--rtc--background-color);
+  background-color: var(--background-color);
   background-position: center;
-  color: var(--rtc--other-color);
+  color: var(--other-color);
   overflow-x: hidden;
 }
 
 header > nav {
-  background-color: var(--rtc--teritiary-color);
+  background-color: var(--teritiary-color);
   border-radius: 10px;
   border: 1px solid #010806;
   padding: 10px;
@@ -60,7 +60,7 @@ a img:hover {
 h1 {
   text-transform: uppercase; /* Mayusculas */
   text-align: center;
-  color: var(--rtc--teritiari-color);
+  color: var(--teritiari-color);
   -webkit-text-stroke: 3px rgb(5, 61, 2); /* Borde al texto */
   text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5); /* Sombra texto */
   font-size: 70px;
@@ -152,7 +152,7 @@ h1 {
   height: 200px;
   border-radius: 100px;
   box-shadow: 10px 10px 10px #010806;
-  border: 3px solid var(--rtc--secundary-color);
+  border: 3px solid var(--secundary-color);
   display: grid;
 }
 
@@ -168,7 +168,7 @@ div > img {
   height: 100px;
   border-radius: 50px;
   box-shadow: 10px 10px 10px #010806;
-  border: 3px solid var(--rtc--secundary-color);
+  border: 3px solid var(--secundary-color);
 }
 
 #top {
@@ -261,7 +261,7 @@ div > h3 {
 }
 
 .boton_enviar {
-  background-color: var(--rtc--other-color);
+  background-color: var(--other-color);
   margin-top: 20px;
   margin-bottom: 7px;
   width: 100px;
