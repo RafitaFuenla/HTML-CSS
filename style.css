@@ -102,7 +102,6 @@ h1 {
   .cartas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
     grid-template-areas: "honda yama kawa";
   }
 }
@@ -151,7 +150,6 @@ h1 {
       "honda honda"
       "kawa kawa"
       "yama yama";
-
   }
 }
 
@@ -215,8 +213,7 @@ div > img {
 
 .honda {
   grid-area: honda;
-  grid-column: span 2;
-}
+  }
 
 .yamaha {
   grid-area: yama;
