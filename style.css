@@ -15,6 +15,7 @@
   --background-color: #2b222c;
   --button-color: #f2d974;
   --other-color: #c7956d;
+  --spacing: 20px;
 }
 
 body {
@@ -22,17 +23,20 @@ body {
   background-position: center;
   color: var(--other-color);
   overflow-x: hidden;
+  width: 100vw;
+  display: grid;
 }
 
 header > nav {
   background-color: var(--teritiary-color);
-  border-radius: 10px;
+  border-radius: var(--spacing);
   border: 1px solid #010806;
-  padding: 10px;
-  margin-top: 10px;
+  padding: var(--spacing);
+  margin: 20px 10px;
   flex-grow: 1;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .nav-comienzo {
@@ -60,7 +64,7 @@ a img:hover {
 h1 {
   text-transform: uppercase; /* Mayusculas */
   text-align: center;
-  color: var(--teritiari-color);
+  color: var(--other-color);
   -webkit-text-stroke: 3px rgb(5, 61, 2); /* Borde al texto */
   text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5); /* Sombra texto */
   font-size: 70px;
@@ -71,7 +75,7 @@ h1 {
 
 .titulo {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing);
   font-size: 45px;
   display: flex;
   justify-content: center;
@@ -82,7 +86,7 @@ h1 {
   .hero {
     display: grid;
     grid-template-columns: 28% 25% 27% 20%;
-    gap: 10px;
+    gap: var(--spacing);
     grid-template-areas: "descripcion1 imagencentro descripcion2 motos";
   }
 
@@ -92,11 +96,13 @@ h1 {
     grid-template-columns: auto auto;
     align-items: center;
     justify-content: space-evenly; /* Centra las columnas */
-    gap: 10px;
+    gap: var(--spacing);
   }
 
   .cartas {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
     grid-template-areas: "honda yama kawa";
   }
 }
@@ -104,8 +110,8 @@ h1 {
 @media screen and (max-width: 1199px) {
   .hero {
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 10px;
+    grid-template-columns: auto;
+    gap: var(--spacing);
     grid-template-areas:
       "descripcion1 imagencentro"
       "motos descripcion2";
@@ -117,27 +123,45 @@ h1 {
     grid-template-columns: auto auto;
     align-items: center;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: var(--spacing);
   }
 
   .descripcion2 {
-    padding-right: 10px;
+    padding-right: var(--spacing);
   }
 
+  
   .cartas {
     display: grid;
-    justify-content: space-around;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing);
     grid-template-areas:
       "honda kawa"
       "yama yama";
-  } 
+
+  }
 }
+
+@media screen and (max-width: 699px) {
+  .cartas {
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing);
+    grid-template-areas:
+      "honda honda"
+      "kawa kawa"
+      "yama yama";
+
+  }
+}
+
 
 .descripcion1 {
   grid-area: descripcion1;
   display: flex;
-  text-align: center;
+  text-align: justify;
   align-items: center;
+  padding-left: var(--spacing);
 }
 
 .imagencentro {
@@ -159,7 +183,7 @@ h1 {
 .descripcion2 {
   display: flex;
   grid-area: descripcion2;
-  text-align: center;
+  text-align: justify;
   align-items: center;
 }
 
@@ -179,7 +203,10 @@ div > img {
 
 .cartas {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing);
   width: 100%;
+  margin: var(--spacing);
 }
 
 .marcas {
@@ -188,6 +215,7 @@ div > img {
 
 .honda {
   grid-area: honda;
+  grid-column: span 2;
 }
 
 .yamaha {
@@ -200,7 +228,7 @@ div > img {
 
 div > h3 {
   text-align: center;
-  margin: 10px;
+  margin: var(--spacing);
 }
 
 .fotostop {
@@ -209,7 +237,7 @@ div > h3 {
 }
 
 .descripciontop {
-  text-align: center;
+  text-align: justify;
   margin: 10px 5px 100px 5px;
 }
 
@@ -217,12 +245,11 @@ div > h3 {
   margin: 0 auto;
   border: 3px black solid;
   width: 340px;
-  padding: 10px;
+  padding: var(--spacing);
   border-radius: 20px;
-  
 }
 
-.tituloregitro {
+.tituloregistro {
   font-size: 30px;
 }
 
@@ -236,14 +263,14 @@ div > h3 {
 .columna2 {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: var(--spacing);
   gap: 3px;
 }
 
 .columna1 {
   display: flex;
   align-items: end;
-  padding-right: 10px;
+  padding-right: var(--spacing);
   gap: 3px;
 }
 
@@ -273,7 +300,7 @@ div > h3 {
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin: 10px;
+  margin: var(--spacing);
 }
 
 .copiright {
