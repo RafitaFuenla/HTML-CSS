@@ -36,14 +36,12 @@ header > nav {
   flex-grow: 1;
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 .nav-comienzo {
   display: flex;
   justify-content: center;
   gap: 100px;
-  width: 100%;
 }
 
 a {
@@ -94,7 +92,7 @@ h1 {
     grid-area: motos;
     display: grid;
     grid-template-columns: auto auto;
-    align-items: center;
+    margin-right: 40px;
     justify-content: space-evenly; /* Centra las columnas */
     gap: var(--spacing);
   }
@@ -103,6 +101,11 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "honda yama kawa";
+  }
+
+  .descripciontop {
+    text-align: justify;
+    margin: 10px 40px 100px 20px;
   }
 }
 
@@ -125,11 +128,15 @@ h1 {
     gap: var(--spacing);
   }
 
+  .descripciontop {
+    text-align: justify;
+    margin: 10px 40px 100px 20px;
+  }
+
   .descripcion2 {
     padding-right: var(--spacing);
   }
 
-  
   .cartas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -137,13 +144,12 @@ h1 {
     grid-template-areas:
       "honda kawa"
       "yama yama";
-
   }
 }
 
 @media screen and (max-width: 699px) {
   .cartas {
-     display: grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing);
     grid-template-areas:
@@ -151,8 +157,12 @@ h1 {
       "kawa kawa"
       "yama yama";
   }
-}
 
+  .descripciontop {
+    text-align: justify;
+    margin: 10px 40px 100px 20px;
+  }
+}
 
 .descripcion1 {
   grid-area: descripcion1;
@@ -173,7 +183,7 @@ h1 {
   width: 300px;
   height: 200px;
   border-radius: 100px;
-  box-shadow: 10px 10px 10px #010806;
+  box-shadow: 10px 10px 20px #010806;
   border: 3px solid var(--secundary-color);
   display: grid;
 }
@@ -189,7 +199,7 @@ div > img {
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  box-shadow: 10px 10px 10px #010806;
+  box-shadow: 10px 10px 20px #010806;
   border: 3px solid var(--secundary-color);
 }
 
@@ -199,21 +209,13 @@ div > img {
   margin-top: 50px;
 }
 
-.cartas {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing);
-  width: 100%;
-  margin: var(--spacing);
-}
-
 .marcas {
   font-size: 25px;
 }
 
 .honda {
   grid-area: honda;
-  }
+}
 
 .yamaha {
   grid-area: yama;
@@ -231,11 +233,6 @@ div > h3 {
 .fotostop {
   display: flex;
   justify-content: space-evenly;
-}
-
-.descripciontop {
-  text-align: justify;
-  margin: 10px 5px 100px 5px;
 }
 
 .registrate {
