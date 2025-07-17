@@ -32,7 +32,7 @@ header > nav {
   border-radius: var(--spacing);
   border: 1px solid #010806;
   padding: var(--spacing);
-  margin: 20px 10px;
+  margin: 20px 40px;
   flex-grow: 1;
   display: flex;
   justify-content: center;
@@ -80,10 +80,10 @@ h1 {
   text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5); /* Sombra texto */
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) { /* Tamaño GRANDE */
   .hero {
     display: grid;
-    grid-template-columns: 28% 25% 27% 20%;
+    grid-template-columns: 28% 22% 27% 20%;
     gap: var(--spacing);
     grid-template-areas: "descripcion1 imagencentro descripcion2 motos";
   }
@@ -105,11 +105,11 @@ h1 {
 
   .descripciontop {
     text-align: justify;
-    margin: 10px 40px 100px 20px;
+    margin: 20px 40px 100px 20px;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199px) { /* Tamaño INTERMEDIO */
   .hero {
     display: grid;
     grid-template-columns: auto;
@@ -122,15 +122,15 @@ h1 {
   .motos6 {
     grid-area: motos;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     align-items: center;
     justify-content: space-evenly;
-    gap: var(--spacing);
+    gap: 10px;
   }
 
   .descripciontop {
     text-align: justify;
-    margin: 10px 40px 100px 20px;
+    margin: 20px 40px 100px 20px;
   }
 
   .descripcion2 {
@@ -147,7 +147,16 @@ h1 {
   }
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 699px) { /* TAMAÑO MOVIL */
+    .motos6 {
+    grid-area: motos;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  
   .cartas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -160,7 +169,7 @@ h1 {
 
   .descripciontop {
     text-align: justify;
-    margin: 10px 40px 100px 20px;
+    margin: 20px 40px 100px 20px;
   }
 }
 
@@ -244,7 +253,7 @@ div > h3 {
 }
 
 .tituloregistro {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 #formulario {
